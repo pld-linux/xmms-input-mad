@@ -4,7 +4,7 @@ Name:		xmms-input-mad
 Version:	0.0.9
 Release:	2
 License:	GPL
-Group:		X11/Applications/Multimedia
+Group:		X11/Applications/Sound
 Source0:	xmms-mad-%{version}.tar.gz
 Patch0:		%{name}-no-configure.patch
 Requires:	xmms
