@@ -2,7 +2,7 @@ Summary:	MP3 input plugin for xmms using MAD library
 Summary(pl):	Wtyczka odtwarzaj±ca pliki MP3 dla xmms z u¿yciem bilioteki MAD
 Name:		xmms-input-mad
 Version:	0.0.9
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	xmms-mad-%{version}.tar.gz
@@ -16,6 +16,7 @@ BuildRequires:	mad-devel
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_xmms_plugin_dir	%(xmms-config --input-plugin-dir)
 
 %description
 xmms-mad is an input plugin for xmms that uses libmad to decode MPEG
@@ -46,7 +47,9 @@ rm -f config/missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR="$RPM_BUILD_ROOT"
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT \
+	libdir=%{_xmms_plugin_dir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -54,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS README
-%attr(755,root,root) %{_libdir}/xmms/Input/*
+%attr(755,root,root) %{_xmms_plugin_dir}/*
