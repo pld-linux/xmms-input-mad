@@ -1,0 +1,11 @@
+--- xmms-mad-0.0.9/src/xmms-mad.c	Thu May  9 17:02:33 2002
++++ xmms-mad-0.0.9-/src/xmms-mad.c	Mon Aug  5 17:28:51 2002
+@@ -252,7 +252,7 @@
+   mad_plugin.about         = xmmsmad_about;
+   mad_plugin.init          = xmmsmad_init;
+   mad_plugin.set_eq        = xmmsmad_set_eq;
+-  mad_plugin.configure     = xmmsmad_configure;
++//  mad_plugin.configure     = xmmsmad_configure;
+   mad_plugin.is_our_file   = xmmsmad_is_our_file;
+   mad_plugin.play_file     = xmmsmad_play_file;
+   mad_plugin.stop          = xmmsmad_stop;
