@@ -8,11 +8,12 @@ Group:		X11/Applications/Multimedia
 Source0:	xmms-mad-%{version}.tar.gz
 Patch0:		%{name}-no-configure.patch
 Requires:	xmms
-BuildRequires:	xmms-devel
-BuildRequires:	mad-devel
-BuildRequires:	gtk+-devel
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gtk+-devel
+BuildRequires:	libtool
+BuildRequires:	mad-devel
+BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -35,7 +36,7 @@ niektórymi uszkodzonymi plikami mp3.
 %build
 rm -f config/missing
 %{__libtoolize}
-aclocal
+%{__aclocal}
 autoheader
 %{__automake}
 %{__autoconf}
