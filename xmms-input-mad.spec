@@ -6,6 +6,7 @@ Release:	3
 License:	GPL
 Group:		X11/Applications/Sound
 Source0:	xmms-mad-%{version}.tar.gz
+# Source0-md5:	6f969da20017514c6ebbcf0acd0b84f2
 Patch0:		%{name}-no-configure.patch
 Requires:	xmms
 BuildRequires:	autoconf
