@@ -37,7 +37,7 @@ niektórymi uszkodzonymi plikami mp3.
 rm -f config/missing
 %{__libtoolize}
 %{__aclocal}
-autoheader
+%{__autoheader}
 %{__automake}
 %{__autoconf}
 %configure
