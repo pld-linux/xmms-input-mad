@@ -16,7 +16,6 @@ BuildRequires:	mad-devel
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
 
 %description
 xmms-mad is an input plugin for xmms that uses libmad to decode MPEG
