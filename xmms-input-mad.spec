@@ -20,13 +20,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 xmms-mad is an input plugin for xmms that uses libmad to decode MPEG
 layer 1/2/3 files and streams. It is not as configurable as mpg123
-plugin, however it handles some evil mp3 files better.
+plugin, however it handles some evil MP3 files better.
 
 %description -l pl
 xmms-mad jest wtyczk± wej¶ciow± dla xmms-a u¿ywaj±c± libmad do
 dekodowania plików i strumieni MPEG layer 1/2/3. Nie jest ona tak
 konfigurowalna jak konkurencja (mpg123), jednak lepiej radzi sobie z
-niektórymi uszkodzonymi plikami mp3.
+niektórymi uszkodzonymi plikami MP3.
 
 %prep
 %setup -q -n xmms-mad-%{version}
