@@ -1,5 +1,5 @@
 Summary:	MP3 input plugin for XMMS using MAD library
-Summary(pl):	Wtyczka wej¶ciowa dla XMMS-a odtwarzaj±ca pliki MP3 z u¿yciem bilioteki MAD
+Summary(pl.UTF-8):   Wtyczka wejÅ›ciowa dla XMMS-a odtwarzajÄ…ca pliki MP3 z uÅ¼yciem bilioteki MAD
 Name:		xmms-input-mad
 Version:	0.0.9
 Release:	5
@@ -22,11 +22,11 @@ xmms-mad is an input plugin for XMMS that uses libmad to decode MPEG
 layer 1/2/3 files and streams. It is not as configurable as mpg123
 plugin, however it handles some evil MP3 files better.
 
-%description -l pl
-xmms-mad jest wtyczk± wej¶ciow± dla XMMS-a u¿ywaj±c± libmad do
-dekodowania plików i strumieni MPEG layer 1/2/3. Nie jest ona tak
+%description -l pl.UTF-8
+xmms-mad jest wtyczkÄ… wejÅ›ciowÄ… dla XMMS-a uÅ¼ywajÄ…cÄ… libmad do
+dekodowania plikÃ³w i strumieni MPEG layer 1/2/3. Nie jest ona tak
 konfigurowalna jak konkurencja (mpg123), jednak lepiej radzi sobie z
-niektórymi uszkodzonymi plikami MP3.
+niektÃ³rymi uszkodzonymi plikami MP3.
 
 %prep
 %setup -q -n xmms-mad-%{version}
