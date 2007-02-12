@@ -1,5 +1,5 @@
 Summary:	MP3 input plugin for XMMS using MAD library
-Summary(pl.UTF-8):   Wtyczka wejściowa dla XMMS-a odtwarzająca pliki MP3 z użyciem bilioteki MAD
+Summary(pl.UTF-8):	Wtyczka wejściowa dla XMMS-a odtwarzająca pliki MP3 z użyciem bilioteki MAD
 Name:		xmms-input-mad
 Version:	0.0.9
 Release:	5
