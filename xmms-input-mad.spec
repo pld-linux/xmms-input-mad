@@ -30,7 +30,7 @@ niektórymi uszkodzonymi plikami MP3.
 
 %prep
 %setup -q -n xmms-mad-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 rm -f config/missing
